@@ -2,7 +2,7 @@
     margin: 0px;
     padding: 0px;
 }
-#menu{
+.menu{
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -18,11 +18,19 @@ ul{
     position: relative;
     list-style-type: none;
 }
-h1{
+#title{
     font-family:cursive;
     font-size: 1.8rem;
     font-style: italic;
     padding:0px 40px;
+}
+.content{
+    padding: 80px 150px;
+}
+#home{
+    text-align:center;
+    font-size:350%;
+    font-family:system-ui;
 }
 /* a:hover{
     padding:8px 10px;

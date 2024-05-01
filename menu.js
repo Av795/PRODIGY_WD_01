@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var menuItems = document.querySelectorAll('.menu');
     menuItems.forEach(function(item) {
         item.addEventListener('mouseover', function() {
-            this.style.color = '#' + Math.floor(Math.random() * 16777215).toString(16);
+            this.style.color = '#' + Math.floor(Math.random() * 1677721).toString(16);
         });
     });
 
@@ -13,9 +13,10 @@ document.addEventListener('DOMContentLoaded', function() {
             a:hover {
                 padding: 8px 10px;
                 background-color: black;
-                border-radius: 10px;
-                border: 2px solid rgb(123, 104, 238);
+                border-radius: 25px;
+                border: 2px solid white;
                 color: white;
+                transition: background-color .5s;
             }
         `;
         // Create a style element
@@ -33,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var navigationMenu = document.querySelector('.menu');
     window.addEventListener('scroll', function() {
         if (window.scrollY > 80) {
-            navigationMenu.style.background= 'orange'; // new background color when scrolled
+            navigationMenu.style.background= '#FFFFFFCC '; // new background color when scrolled
         } else {
             navigationMenu.style.background= 'linear-gradient(270deg, greenyellow, whitesmoke)'; // default background color
         }
